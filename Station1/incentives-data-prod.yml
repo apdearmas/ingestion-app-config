@@ -1,5 +1,6 @@
 configuration:
   config:
+    greeting: 'from prod'
     aad-app-id: 7a19f2bf-ea63-4d3f-9718-4b1123ab7992
     appInsightsInstrumentationKeyDataExchangeService: 4f1841b9-14e4-4c0a-891d-b8911bbe7028
     appInsightsInstrumentationKeyPrivacyTagging: cae9701c-251e-4671-b19e-121ef92b688f
