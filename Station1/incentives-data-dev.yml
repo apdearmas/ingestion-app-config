@@ -25,7 +25,7 @@ configuration:
       _server-name: dataflowmgtint.database.windows.net
       _db-name: DataFlowState
       _secure-config-auth-id: pme
-      _connection-timeout: '31'
+      _connection-timeout: '40'
       _encrypt: 'true'
       _use-aad-auth: 'true'
     leaserepository-sqlconfig:
