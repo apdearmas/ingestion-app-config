@@ -1,0 +1,52 @@
+configuration:
+  config:
+  greeting: 'from common'
+    aad-app-id: 7a19f2bf-ea63-4d3f-9718-4b1123ab7992
+    appInsightsInstrumentationKeyDataExchangeService: 4f1841b9-14e4-4c0a-891d-b8911bbe7028
+    appInsightsInstrumentationKeyPrivacyTagging: cae9701c-251e-4671-b19e-121ef92b688f
+    appInsightsInstrumentationKeyFinancialInstruction: f4de0f45-b044-46d6-81c5-652a998586c2
+    genevaMonitoringAccountName: Universal Payouts Platform Ledger Hot Path
+    genevaMonitoringNamespace: uppledgerwarmpath
+    genevaMonitoringIfxEventsSessionName: ifxlogsession
+    AllowedTokenAudiences: 'api://178cae61-4836-4391-aa95-5eda6e1fe690'
+    AllowedTokenIssuers: 'https://sts.windows.net/975f013f-7f24-47e8-a7d3-abc4752bf346/'
+    icmCertificateSubjectDistinguishedName: >-
+        CN=client.icm.payouts.microsoft.com, OU=Microsoft Corporation,
+        O=Microsoft Corporation, L=Redmond, S=WA, C=US
+    icmConnectorGuid: 3b740c09-969b-4a6a-bc61-d9aea4ade8b7
+    key-vault-url: 'https://ustpitdata-webjob-int.vault.azure.net'
+    key-vault-configs-secret-name: partner-data-flow-configs
+    fi-key-vault-url: 'https://fi-kv-int.vault.azure.net/'
+    key-vault-configs-fi-service-secret-name: FI-Database
+    key-vault-configs-refresh-minutes: '10'
+    dataproxy-key-vault-url: 'https://dataproxykeyvault.vault.azure.net'
+    dataproxy-webjob-secret-key: sp-pme-webjobs-pi-ppe-secret
+    stateservice-sqlconfig:
+      _server-name: dataflowmgtint.database.windows.net
+      _db-name: DataFlowState
+      _secure-config-auth-id: pme
+      _connection-timeout: '30'
+      _encrypt: 'true'
+      _use-aad-auth: 'true'
+    leaserepository-sqlconfig:
+      _server-name: dataflowmgtint.database.windows.net
+      _db-name: DataFlowState
+      _secure-config-auth-id: pme
+      _connection-timeout: '30'
+      _encrypt: 'true'
+      _use-aad-auth: 'true'
+    versionrepository-sqlconfig:
+      _server-name: dataflowmgtint.database.windows.net
+      _db-name: DataFlowState
+      _secure-config-auth-id: pme
+      _connection-timeout: '30'
+      _encrypt: 'true'
+      _use-aad-auth: 'true'
+    DataExchangeService-sqlconfig:
+      _server-name: uppledgerdataexchangeint.database.windows.net
+      _db-name: DataExchange
+      _secure-config-auth-id: pme
+      _connection-timeout: '30'
+      _encrypt: 'true'
+      _use-aad-auth: 'true'
+    
