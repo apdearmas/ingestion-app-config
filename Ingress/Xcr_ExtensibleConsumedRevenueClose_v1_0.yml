@@ -1,0 +1,777 @@
+InputFilePath: /ExtensibleConsumptionRevenue_Publish_Allocation/v2/{0:yyyy}/{0:MM}/01/
+IngressOptions:
+  FilePathFormat: yyyyMMdd
+  FileExtension: Parquet
+  ExtractOption:
+    HasHeader: false
+    Quoting: false
+    NullEscape: 'null'
+    RemoveDuplicates: true
+    DuplicatesSorting: null
+    HasExtractDateTimeMetadata: false
+    DataFilter: null
+    VersionField: null
+  SkipIngestionIfFileDoesNotExist: false
+  StartTimeOffset: '00:00:00'
+  EndTimeOffset: 1.00:00:00
+  VersionField: null
+SparkPoolConfig: null
+EntityName: ExtensibleConsumedRevenueClose_v1_0
+DataSourceName: xcr
+DataSourceType: ADLS_Gen2
+DataPullType: Full
+AnalyticsUnitCount: 0
+ArchiveBefore: null
+Columns:
+  - Name: BillingMonthKey
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 1
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: DataSourceID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 2
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: DataSourceName
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 3
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BillingTypeID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 4
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BillingTypeName
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 5
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: EnrollmentNumber
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 6
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: SubscriptionGUID
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 7
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: OfferID
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 8
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BillableAccountID
+    DataType: long
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 9
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: SubscriptionReferenceID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 10
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ResourceGUID
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 11
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: CurrencyCode
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 12
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: InvoiceDateKey
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 13
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: InvoiceNumber
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 14
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: UsageStartDateKey
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 15
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: UsageEndDateKey
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 16
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AllocationTPID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 17
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BillingTPID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 18
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerInfluencers
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 19
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ServiceInfluencers
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 20
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: MarketplaceInfluencers
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 21
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: GrossChargesLC
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 22
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: GrossChargesUSD
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 23
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: GrossChargesCD
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 24
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AdjustmentsLC
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 25
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AdjustmentsUSD
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 26
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AdjustmentsCD
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 27
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ChargesLC
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 28
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ChargesUSD
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 29
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ChargesCD
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 30
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: RatedUnits
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 31
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PaidUnits
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 32
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PaidIncludedUnits
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 33
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BillingSubsidiaryID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 34
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: SubsidiarySubDistrictID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 35
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: EndCustomerSubsegmentID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 36
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AllocationSplit
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 37
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AllocationBaseYear
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 38
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AgreementNumber
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 39
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: OrganizationId
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 40
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BillingGroupId
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 41
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ResourceLocation
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 42
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: UsageMonthKey
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 43
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: CompanyCode
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 44
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AI_isTest
+    DataType: boolean
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 45
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: RevSumDivisionId
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 46
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: RevSumCategoryId
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 47
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: RevenuePartNumber
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 48
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ProductFamilyId
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 49
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: BusinessId
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 50
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: AllocationSubsidiaryId
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 51
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+PrimaryKeyColumn: >-
+  BillingMonthKey, DataSourceID, BillingTypeID, EnrollmentNumber,
+  SubscriptionGUID, OfferID, BillableAccountID, SubscriptionReferenceID,
+  ResourceGUID, InvoiceDateKey, InvoiceNumber, UsageStartDateKey,
+  UsageEndDateKey, AllocationTPID, BillingTPID, PartnerInfluencers,
+  ServiceInfluencers, MarketplaceInfluencers, AgreementNumber,
+  BillingSubsidiaryID, SubsidiarySubDistrictID, EndCustomerSubsegmentID,
+  OrganizationId, BillingGroupId, ResourceLocation, UsageMonthKey, CompanyCode,
+  AI_isTest, RevSumDivisionId, RevSumCategoryId, RevenuePartNumber,
+  ProductFamilyId, BusinessId, AllocationSubsidiaryId
+Bookmark: null
+Index:
+  Columns:
+    - BillingMonthKey
+    - DataSourceID
+    - BillingTypeID
+    - EnrollmentNumber
+Partition: null
+DistributionScheme:
+  Name: ROUND ROBIN
+  Columns: []
+  RequiresColumnDefinition: false
+  DistributionCount: null
+EntityGroup: Xcr
+LogicalEntityName: ExtensibleConsumedRevenueClose
+Name: Xcr.ExtensibleConsumedRevenueClose_v1_0
+PrivacyTags:
+  - Name: Privacy.Asset.NonPersonal
+EnabledEnvironment: PreProd
+EntityVersion:
+  Major: 1
+  Minor: 0
+  Build: 0
+  Revision: 0
+  MajorRevision: 0
+  MinorRevision: 0
+EntityVersionString: v1_0
+EntityPriority: P3

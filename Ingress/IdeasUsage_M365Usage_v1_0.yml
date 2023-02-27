@@ -1,0 +1,493 @@
+InputFilePath: /M365Usage/v4/{0:yyyy}/{0:MM}/*.parquet
+IngressOptions:
+  FilePathFormat: yyyyMM
+  FileExtension: Parquet
+  ExtractOption:
+    HasHeader: true
+    Quoting: true
+    NullEscape: 'null'
+    RemoveDuplicates: true
+    DuplicatesSorting: null
+    HasExtractDateTimeMetadata: false
+    DataFilter: null
+    VersionField: null
+  SkipIngestionIfFileDoesNotExist: true
+  StartTimeOffset: '00:00:00'
+  EndTimeOffset: '00:00:00'
+  VersionField: null
+SparkPoolConfig: null
+EntityName: M365Usage_v1_0
+DataSourceName: ideas
+DataSourceType: Cosmos
+DataPullType: Partition
+AnalyticsUnitCount: 0
+ArchiveBefore: null
+Columns:
+  - Name: Date
+    DataType: date
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 1
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: SourceSystem
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 2
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: TenantId
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 3
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: TenantName
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 4
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: Segment
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 5
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: SubSegment
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 6
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: Subsidiary
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 7
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: Area
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 8
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: CountryCode
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 9
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: Workload
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 10
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: Numerator
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 11
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: Denominator
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 12
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerOfRecordKey
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 13
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: ResourceUri
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 14
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerOfRecordVersion
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 15
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerId
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 16
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerOfRecordAttachedDate
+    DataType: date
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 17
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerOfRecordType
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 18
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartnerRole
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 19
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: FlightConfigId
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 20
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: SpecialPartnerType
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 21
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: IsTest
+    DataType: boolean
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 22
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: IsCharity
+    DataType: boolean
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 23
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PriorHWM
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 24
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: CompUnits
+    DataType: decimal
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 25
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: DataCenterInstance
+    DataType: string
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 26
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: CustomerTPID
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: true
+    IsSourceNullable: null
+    Position: 27
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: IsFastTrackTenant
+    DataType: boolean
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 28
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: HasQuickStartTenantTag
+    DataType: boolean
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 29
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: HasEdu
+    DataType: boolean
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 30
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+  - Name: PartitionDate
+    DataType: int
+    AggregationOperation: null
+    ColumnType: Business
+    IsNullable: false
+    IsSourceNullable: null
+    Position: 31
+    PrivacyTags: null
+    IsSnappyCompressionRequired: false
+    DecimalScale: 8
+    DataSize: null
+    Alias: null
+    IsIdentifier: false
+    ClassificationLevel: null
+PrimaryKeyColumn: TenantId, Workload, Date
+Bookmark:
+  InitialValue: '2022-01-01T00:00:00'
+  IncrementValue: null
+  OffsetValue: null
+  DataType: DateTime
+  Name: <bookmark>
+  TrackDeletedRows: false
+Index:
+  Columns:
+    - TenantId
+    - Workload
+    - Date
+Partition: null
+DistributionScheme:
+  Name: ROUND ROBIN
+  Columns: []
+  RequiresColumnDefinition: false
+  DistributionCount: null
+EntityGroup: IdeasUsage
+LogicalEntityName: M365Usage
+Name: IdeasUsage.M365Usage_v1_0
+PrivacyTags:
+  - Name: Privacy.Asset.NonPersonal
+EnabledEnvironment: PreProd
+EntityVersion:
+  Major: 1
+  Minor: 0
+  Build: 0
+  Revision: 0
+  MajorRevision: 0
+  MinorRevision: 0
+EntityVersionString: v1_0
+EntityPriority: P3
