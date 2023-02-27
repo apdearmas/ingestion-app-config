@@ -1,3 +1,4 @@
+ForTest:'Main'
 InputFilePath: /M365Usage/v4/{0:yyyy}/{0:MM}/*.parquet
 IngressOptions:
   FilePathFormat: yyyyMM
