@@ -1,3 +1,4 @@
+ForTest: 'Prod'
 InputFilePath: /ExtensibleConsumptionRevenue_Publish_Allocation/v2/{0:yyyy}/{0:MM}/01/
 IngressOptions:
   FilePathFormat: yyyyMMdd
